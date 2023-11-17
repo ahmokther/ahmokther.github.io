@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anwar Hossain Mokhter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d4e9c11702.js" crossorigin="anonymous"></script>
+    </Head>
+    <body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Embedded System Engineer</p>
+                <h1>Hi, I'm <span>An</span>war<br>From Bangla<span class="d">desh</span></h1>
+            </div>
+        </div>
+     </div>
+     <!--------------------------about---------------------------------->
+     <div id="about">
+         <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   <img src="images/weba.jpg" > 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>
+                        Anwar Hossain Mokhter is a dynamic Embedded System Engineer actively engaged in continuous learning, fostering professional development, and staying abreast of emerging technologies.
+                        With a robust foundation in IoT, electronics prototyping, manufacturing, PCB design, and microcontroller programming,<br> He consistently seeks opportunities to acquire new skills and knowledge.
+                        This commitment to ongoing learning reflects his dedication to personal and professional growth, ensuring relevance in the ever-evolving landscape<br> of embedded systems.    
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Microcontroller</span><br><br>Arduino , ESP32 and ESP8266 , AVR , STM32</li>
+                            <li><span>Software</span><br> <br>Altium for PCB Design , FlatCAM for PCB designs to a CNC router , Abode(illustator,PS,Xd)</li>
+                            <li><span>PCB fabrication</span><br><br> Those tools are PCB CAD files, pcb-gcode, pcb-probe, Mach 3 CNC for doing the milling</li>
+                            <li><span>IoT(Internet of Things)</span><br><br> 
+                                Web application:<br> <br> 
+                                Frontend : Grafana(visualizing sensor data) , Website-Based:HTML,CSS,JS<br><br> 
+                                Backend : PHP , Node-RED(a flow-based programming tool)<br><br> 
+                                Database(For Stored Sensor data): Mysql , influxDB<br><br> 
+                                Communication protocol : HTTP(POST ,GET method) , MQTT(Mosquitto is an open source message broker)<br><br> 
+                                Host-web app(deployment) : Cloud(Virtual private server) , LocalHost(Raspberry Pi or PC)<br><br> 
+                                IOT platform: ThingsBoard.io , Blynk.io
+
+                            </li>
+                            <li><span>Eletronics</span><br><br>Electronics device Prototype ,Circuit Board Soldering and Fabrication</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                           
+                            <li><span>2022-Current</span><br><br>Embedded System Engineer at Exact Enginnering Solution Ltd.</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><span>2018-2023</span><br><br>B.sc in Mechatronics Enginnering from World University of Bangladesh</li>
+                            <li><span>2014-2016</span><br><br> Higher Secondary Certificate(Science) from Government Laboratory High School,Dhaka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+
+    
+    <!--------------------------------------------------------------------------------services------------------------------------------------------------->
+      <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-wave-square"></i>
+                    <h2>Eletronics Prototype</h2>
+                    <p>
+                        Proin consequat a velit id elementum. Nulla lobortis metus ac neque aliquam fermentum. obortis.
+                         Vestibulum id dui nec est scelerisque egestas nec sit amet felis. 
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>PCB Design And fabrication</h2>
+                    <p>
+                        Proin consequat a velit id elementum. Nulla lobortis metus ac neque aliquam fermentum. obortis.
+                         Vestibulum id dui nec est scelerisque egestas nec sit amet felis.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h2>Internet of Things (IoT) </h2>
+                    <p>
+                        Proin consequat a velit id elementum. Nulla lobortis metus ac neque aliquam fermentum. obortis.
+                         Vestibulum id dui nec est scelerisque egestas nec sit amet felis.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    <!--------------------------------------------------------------------------------Portfolio------------------------------------------------------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/w1.jpg">
+                    <div class="layer">
+                        <h3>Eletronics Prototype</h3>
+                        <p>
+                            Solar tracking systems have the PV surface that can be rotated/tilted 
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/w2.jpg">
+                    <div class="layer">
+                        <h3>SMD Soldering</h3>
+                        <p>SMD components Soldering on PCB</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/w3.jpg">
+                    <div class="layer">
+                        <h3>Printed Circuit Board(PCB)</h3>
+
+                        <p>PCB fabrication <br>
+                        CNC machine are employed to precisely and accurately fabricated printed circuit boards (PCBs) 
+                        </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/w4.png">
+                    <div class="layer">
+                        <h3>IoT</h3>
+                        <p>Sensor data visualization</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+        
+     </div>
+     <!--------------------------------------------------------------------------------contact------------------------------------------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>ah.mokther@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i></i>+8801515264836</p>
+                    <div class="social-icons">
+                        <a href="https://m.facebook.com/anwar.mokhter"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/ahmokhter/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@mtelab8296"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+              <!--    <a href="path/cv.pdf" download class="btn btn2">Download Cv</a>  -->  
+                    <a href="#"  class="btn btn2">Download Cv</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Anwar Hossain Mokhter.</p>
+        </div>
+
+     </div>
+    
+    <script>
+
+       var tablinks = document.getElementsByClassName("tab-links"); 
+       var tabcontents = document.getElementsByClassName("tab-contents");  
+       function opentab(tabname){
+         for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+       } 
+
+     </script>
+
+     <script>
+       var sidemenu = document.getElementById("sidemenu");
+       function openmenu(){
+         sidemenu.style.right = "0";
+       } 
+
+       function closemenu(){
+         sidemenu.style.right = "-200px";
+       } 
+     </script>
+
+    </body>
+</html>
